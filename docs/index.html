@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>生命靈數計算器</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img
+        src="./assets/logo.jpg"
+        class="logo"
+        alt="品牌 Logo"
+        style="height:3rem; max-width:100%; display:block; object-fit:contain;"
+      />
+      <h1> Halo.Project 生命靈數計算器 </h1>
+    </div>
+    <div class="main-content">
+      <div class="left-panel">
+        <form id="numerologyForm">
+          <label for="year">出生年</label>
+          <input type="number" id="year" name="year" required />
+
+          <label for="month">出生月</label>
+          <select id="month" name="month"></select>
+
+          <label for="day">出生日</label>
+          <select id="day" name="day"></select>
+
+          <button type="submit">計算</button>
+        </form>
+
+        <div id="result" class="result"></div>
+        <div id="linesList" class="result"></div>
+      </div>
+
+      <div class="right-panel">
+        <canvas id="gridCanvas" width="360" height="360"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
