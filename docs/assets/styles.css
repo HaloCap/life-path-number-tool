@@ -115,3 +115,24 @@ button:hover {
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .left-panel,
+  .right-panel {
+    width: 100%
+  }
+  .right-panel {
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  #gridCanvas {
+    width: 100%;
+    height: auto;
+    max-width: 360px;
+  }
+}
